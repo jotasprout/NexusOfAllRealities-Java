@@ -12,7 +12,7 @@
 - 3+ Classes
 - 3+ Constructors
 - 4+ methods
-- Scanner to get responses from the user
+- Scanner to get responses from the user 
 - A switch statement
 - 1+ exception handler(s)
 - A Collections structures (ArrayList, HashSet, Queue, Stack, LinkedList, HashMap)

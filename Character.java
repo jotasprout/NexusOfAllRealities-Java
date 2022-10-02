@@ -17,6 +17,8 @@ public class Character {
     int armorClass;
     int hitPoints;
 
+    // ABILITIES
+    
     int strength;
     int dexterity;
     int constitution;
