@@ -7,12 +7,6 @@ public class Character {
 
     public Character(){};
 
-    public Character (String name, int level)
-    {
-        this.name = name;
-        this.level = level;
-    }
-
     public Character (String name)
     {
         this.name = name;
