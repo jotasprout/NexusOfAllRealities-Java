@@ -20,7 +20,7 @@ public class Character {
     }
     
     String race;
-    String profession;
+    String career;
 
     String[] morality = {"Evil", "Good", "Neutral"};
     String[] order = {"Chaotic", "Lawful", "True"};

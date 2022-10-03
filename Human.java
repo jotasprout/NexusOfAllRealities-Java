@@ -1,12 +1,11 @@
 public class Human {
-    // Hit Die
-    // Hit Point maximum increase
-    // Ability Score increase
-    // Saving Throw Proficiencies 
-    // Saving Throws
-    // Other proficiencies
+    // HitDice
+    // HitPoints
+    // AbilityScoreIncrease
+    // SavingThrows 
+    // Proficiencies 
     // Languages
     // Speed
     // Alignment
-    // Combat proficiency
+    // CombatProficiency
 }

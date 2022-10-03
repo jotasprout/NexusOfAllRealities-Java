@@ -1,8 +1,9 @@
 public class Cleric extends Character {
-    // Hit Die
-    // Hit Points
-    // Primary Ability
-    // Saving Throw Proficiencies 
+    // HitDice
+    // HitPoints
+    // PrimaryAbility
+    // SavingThrows 
+    // Proficiencies 
     // Skills
-    // Additional equipment
+    // AdditionalEquipment
 }
