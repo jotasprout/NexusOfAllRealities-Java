@@ -39,14 +39,43 @@ public class Main
         }
 
         System.out.println("Let's see what " + myChar.name + " is good for.");
+
+        // STRENGTH
         System.out.println("Rolling for Strength first ... ");
-
         AbilityRoll strengthRoll = new AbilityRoll();
-
         System.out.println("Strength is " + strengthRoll.abilityRoll + ".");
-
         myChar.strength = strengthRoll.abilityRoll;
-        System.out.println(myChar.name + " has a Strength score of " + myChar.strength + ".");
+
+        // DEXTERITY
+        System.out.println("Rolling for dexterity ... ");
+        AbilityRoll dexterityRoll = new AbilityRoll();
+        System.out.println("Dexterity is " + dexterityRoll.abilityRoll + ".");
+        myChar.dexterity = dexterityRoll.abilityRoll;
+
+        // CONSTITUTION
+        System.out.println("Rolling for Constitution ... ");
+        AbilityRoll constitutionRoll = new AbilityRoll();
+        System.out.println("Constitution is " + constitutionRoll.abilityRoll + ".");
+        myChar.constitution = constitutionRoll.abilityRoll;
+
+        // INTELLIGENCE
+        System.out.println("Rolling for Intelligence ... ");
+        AbilityRoll intelligenceRoll = new AbilityRoll();
+        System.out.println("Intelligence is " + intelligenceRoll.abilityRoll + ".");
+        myChar.intelligence = intelligenceRoll.abilityRoll;
+
+        // WISDOM
+        System.out.println("Rolling for Wisdom ... ");
+        AbilityRoll wisdomRoll = new AbilityRoll();
+        System.out.println("Wisdom is " + wisdomRoll.abilityRoll + ".");
+        myChar.wisdom = wisdomRoll.abilityRoll;
+
+        // CHARISMA
+        System.out.println("Rolling for Charisma ... ");
+        AbilityRoll charismaRoll = new AbilityRoll();
+        System.out.println("Charisma is " + charismaRoll.abilityRoll + ".");
+        myChar.charisma = charismaRoll.abilityRoll;
+
         System.out.println(myChar);
 
         scan.close();

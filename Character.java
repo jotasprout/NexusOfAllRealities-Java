@@ -26,6 +26,8 @@ public class Character {
     int hitPoints;
 
     // ABILITIES
+
+    String[] abilities = {"Strength", "Dexterity", "Constitutions", "Intelligence", "Wisdom", "Charisma"};
     
     int strength;
     int dexterity;
@@ -43,7 +45,7 @@ public class Character {
     @Override
     public String toString()
     {
-        return "Name: " + name + ", is a Level " + level + " " + race + " with a strength score of " + strength;
+        return "Name: " + name + ", Level: " + level + ", Race: " + race + ", Strength: " + strength + ", Dexterity: " + dexterity + ", Constitution: " + constitution + ", Intelligence: " + intelligence + ", Wisdom: " + wisdom + ", Charisma: " + charisma;
         //return "Name: " + name + ", is a " + race + " Level " + level + " " + profession;
     }
 }
