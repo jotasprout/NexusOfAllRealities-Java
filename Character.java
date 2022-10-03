@@ -12,6 +12,18 @@ public class Character {
         this.name = name;
         this.level = level;
     }
+
+    public Character (String name)
+    {
+        this.name = name;
+        level = 1;
+        strength = 0;
+        dexterity = 0;
+        constitution = 0;
+        intelligence = 0;
+        wisdom = 0;
+        charisma = 0;
+    }
     
     String race;
     String profession;
@@ -26,8 +38,6 @@ public class Character {
     int hitPoints;
 
     // ABILITIES
-
-    String[] abilities = {"Strength", "Dexterity", "Constitutions", "Intelligence", "Wisdom", "Charisma"};
     
     int strength;
     int dexterity;

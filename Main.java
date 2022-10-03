@@ -11,7 +11,7 @@ public class Main
         System.out.println("What is the name of your character?");
         String myName = scan.nextLine();
 
-        Character myChar = new Character(myName, 1);
+        Character myChar = new Character(myName);
 
         System.out.println("\nWhat race is your character (type a number)?\n"
                             + "[1] Human\n"
@@ -40,41 +40,36 @@ public class Main
 
         System.out.println("Let's see what " + myChar.name + " is good for.");
 
-        // STRENGTH
-        System.out.println("Rolling for Strength first ... ");
-        AbilityRoll strengthRoll = new AbilityRoll();
-        System.out.println("Strength is " + strengthRoll.abilityRoll + ".");
-        myChar.strength = strengthRoll.abilityRoll;
+        String[] abilities = {"strength", "dexterity", "constitution", "intelligence", "wisdom", "charisma"};
 
-        // DEXTERITY
-        System.out.println("Rolling for dexterity ... ");
-        AbilityRoll dexterityRoll = new AbilityRoll();
-        System.out.println("Dexterity is " + dexterityRoll.abilityRoll + ".");
-        myChar.dexterity = dexterityRoll.abilityRoll;
+        for (String ability : abilities)
+        {
+                System.out.println("Rolling for " + ability + " ...");
+                AbilityRoll thisRoll = new AbilityRoll();
 
-        // CONSTITUTION
-        System.out.println("Rolling for Constitution ... ");
-        AbilityRoll constitutionRoll = new AbilityRoll();
-        System.out.println("Constitution is " + constitutionRoll.abilityRoll + ".");
-        myChar.constitution = constitutionRoll.abilityRoll;
-
-        // INTELLIGENCE
-        System.out.println("Rolling for Intelligence ... ");
-        AbilityRoll intelligenceRoll = new AbilityRoll();
-        System.out.println("Intelligence is " + intelligenceRoll.abilityRoll + ".");
-        myChar.intelligence = intelligenceRoll.abilityRoll;
-
-        // WISDOM
-        System.out.println("Rolling for Wisdom ... ");
-        AbilityRoll wisdomRoll = new AbilityRoll();
-        System.out.println("Wisdom is " + wisdomRoll.abilityRoll + ".");
-        myChar.wisdom = wisdomRoll.abilityRoll;
-
-        // CHARISMA
-        System.out.println("Rolling for Charisma ... ");
-        AbilityRoll charismaRoll = new AbilityRoll();
-        System.out.println("Charisma is " + charismaRoll.abilityRoll + ".");
-        myChar.charisma = charismaRoll.abilityRoll;
+                switch(ability) {
+                        case "strength": System.out.println(ability + " is " + thisRoll.abilityRoll + ".");
+                                myChar.strength = thisRoll.abilityRoll;
+                                break;
+                        case "dexterity": System.out.println(ability + " is " + thisRoll.abilityRoll + ".");
+                                myChar.dexterity = thisRoll.abilityRoll;
+                                break;
+                        case "constitution": System.out.println(ability + " is " + thisRoll.abilityRoll + ".");
+                                myChar.constitution = thisRoll.abilityRoll;
+                                break;
+                        case "intelligence": System.out.println(ability + " is " + thisRoll.abilityRoll + ".");
+                                myChar.intelligence = thisRoll.abilityRoll;
+                                break;  
+                        case "wisdom":System.out.println(ability + " is " + thisRoll.abilityRoll + ".");
+                                myChar.wisdom = thisRoll.abilityRoll;
+                                break;
+                        case "charisma": System.out.println(ability + " is " + thisRoll.abilityRoll + ".");
+                                myChar.charisma = thisRoll.abilityRoll;
+                                break;                   
+                        default: System.out.println("You need better dice.");
+                        // need a custom exception here
+                }   
+        }
 
         System.out.println(myChar);
 

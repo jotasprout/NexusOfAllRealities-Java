@@ -15,11 +15,6 @@ public class AbilityRoll
     {
         Random objGenerator = new Random();
         int randomSixSidedNum = objGenerator.nextInt(6);
-        // for (int iCount = 0; iCount < 10; iCount++)
-        // {
-        //     randomSixSidedNum = objGenerator.nextInt(6);
-        //System.out.println("Random six-sided dice roll = " + randomSixSidedNum + ".");
-        // }
         return randomSixSidedNum;
     }
 
@@ -31,7 +26,6 @@ public class AbilityRoll
             sixSidedRoll = rollSixSided();
             abilityRoll += sixSidedRoll;
         }
-        //System.out.println("Ability roll = " + abilityRoll + ".");
         return abilityRoll;
     } 
 
