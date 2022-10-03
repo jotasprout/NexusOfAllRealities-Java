@@ -1,9 +1,9 @@
-import java.util.*;
+// import java.util.*;
 
-public class Race {
+// public class Race {
 
     // SCANNER CREATION
-    Scanner scan = new Scanner(System.in);
+   // Scanner scan = new Scanner(System.in);
 
    // String race;
 
@@ -17,4 +17,4 @@ public class Race {
 
 
 
-}
+// }

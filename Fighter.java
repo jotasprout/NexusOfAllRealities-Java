@@ -1,4 +1,4 @@
-public class MagicUser extends Character {
+public class Fighter extends Character {
     // Hit Die
     // Hit Points
     // Primary Ability
