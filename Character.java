@@ -43,7 +43,7 @@ public class Character {
     @Override
     public String toString()
     {
-        return "Name: " + name + ", is a Level " + level + " character with a strength score of " + strength;
+        return "Name: " + name + ", is a Level " + level + " " + race + " with a strength score of " + strength;
         //return "Name: " + name + ", is a " + race + " Level " + level + " " + profession;
     }
 }
