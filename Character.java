@@ -4,6 +4,14 @@ import java.lang.Override;
 public class Character {
 
     String name;
+
+    public Character(){};
+
+    public Character (String name, int level)
+    {
+        this.name = name;
+        this.level = level;
+    }
     
     String race;
     String profession;
@@ -11,8 +19,8 @@ public class Character {
     String[] morality = {"Evil", "Good", "Neutral"};
     String[] order = {"Chaotic", "Lawful", "True"};
 
-    int expPoints = 0;
-    int level = 1;
+    int expPoints;
+    int level;
 
     int armorClass;
     int hitPoints;
@@ -35,6 +43,7 @@ public class Character {
     @Override
     public String toString()
     {
-        return name + " is a " + race + " Level " + level + " " + profession;
+        return "Name: " + name + ", is a Level " + level + " character with a strength score of " + strength;
+        //return "Name: " + name + ", is a " + race + " Level " + level + " " + profession;
     }
 }
