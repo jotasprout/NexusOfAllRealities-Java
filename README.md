@@ -25,14 +25,14 @@ Methods for "rolling" three six-sided dice (the sum of three random numbers) to 
 
 ### Other
 
-+ 3+ Classes
+- 3+ Classes
 - 3+ Constructors
 - 4+ methods
-+ Scanner to get responses from the user 
-+ A switch statement
+- Scanner to get responses from the user
+- A switch statement
 - 1+ exception handler(s)
-+ A Collections structures (ArrayList, HashSet, Queue, Stack, LinkedList, HashMap)
-+ A loop that modifies, organizes or returns values from the iteration
+- A Collections structures (ArrayList, HashSet, Queue, Stack, LinkedList, HashMap)
+- A loop that modifies, organizes or returns values from the iteration
 
 ## Original README for Nexus of All Realities
 
