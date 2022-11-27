@@ -18,6 +18,8 @@ public class Character {
         charisma = 0;
     }
 
+    static int[] abilityScores;
+
     String race;
     String career;
 

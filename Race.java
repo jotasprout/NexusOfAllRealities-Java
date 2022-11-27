@@ -18,19 +18,19 @@ public class Race {
 
         switch (myRaceChoice) {
             case 1:
-                System.out.println("You chose human.\n");
+                System.out.println("\nYou chose human.\n");
                 race = "human";
                 break;
             case 2:
-                System.out.println("You chose dwarf.\n");
+                System.out.println("\nYou chose dwarf.\n");
                 race = "dwarf";
                 break;
             case 3:
-                System.out.println("You chose elf.\n");
+                System.out.println("\nYou chose elf.\n");
                 race = "elf";
                 break;
             case 4:
-                System.out.println("You chose halfling.\n");
+                System.out.println("\nYou chose halfling.\n");
                 race = "halfling";
                 break;
             default:
