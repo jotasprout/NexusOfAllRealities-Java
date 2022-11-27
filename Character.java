@@ -1,5 +1,3 @@
-
-//import java.util.*;
 import java.lang.Override;
 
 public class Character {

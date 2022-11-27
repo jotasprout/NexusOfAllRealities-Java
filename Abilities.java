@@ -1,12 +1,15 @@
 public class Abilities {
 
+    static String[] abilities = { "strength", "dexterity", "constitution", "intelligence", "wisdom", "charisma" };
+
     static Character rollForAbilities(Character aChar) {
 
         Character myChar = new Character();
 
         myChar = aChar;
 
-        String[] abilities = { "strength", "dexterity", "constitution", "intelligence", "wisdom", "charisma" };
+        // String[] abilities = { "strength", "dexterity", "constitution",
+        // "intelligence", "wisdom", "charisma" };
 
         for (String ability : abilities) {
             System.out.println("Rolling for " + ability + " ...");

@@ -8,13 +8,6 @@ public class AbilityRoll {
         rollForAbility();
     }
 
-    // roll one six-sided die
-    // public int rollSixSided() {
-    // Random objGenerator = new Random();
-    // int randomSixSidedNum = objGenerator.nextInt(6);
-    // return randomSixSidedNum;
-    // }
-
     // roll for abilities
     // Simulation of rolling three six-sided die for each ability
     public int rollForAbility() {
