@@ -18,23 +18,23 @@ public class Race {
 
         switch (myRaceChoice) {
             case 1:
-                System.out.println("You chose human");
+                System.out.println("You chose human.\n");
                 race = "human";
                 break;
             case 2:
-                System.out.println("You chose dwarf");
+                System.out.println("You chose dwarf.\n");
                 race = "dwarf";
                 break;
             case 3:
-                System.out.println("You chose elf");
+                System.out.println("You chose elf.\n");
                 race = "elf";
                 break;
             case 4:
-                System.out.println("You chose halfling");
+                System.out.println("You chose halfling.\n");
                 race = "halfling";
                 break;
             default:
-                System.out.println("You chose snail. Excellent choice.");
+                System.out.println("You chose snail. Excellent choice.\n");
                 // need a custom exception here
         }
 
