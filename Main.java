@@ -13,30 +13,31 @@ public class Main
 
                 Character myChar = new Character(myName);
 
-                System.out.println("\nWhat race is your character (type a number)?\n"
-                + "[1] Human\n"
-                + "[2] Dwarf\n"
-                + "[3] Elf\n"
-                + "[4] Halfling\n");
+                myChar.race = Race.chooseRace();
 
-                int myRaceChoice = scan.nextInt();
+                // System.out.println("\nWhat race is your character (type a number)?\n"
+                // + "[1] Human\n"
+                // + "[2] Dwarf\n"
+                // + "[3] Elf\n"
+                // + "[4] Halfling\n");
 
-                switch(myRaceChoice) {
-                case 1: System.out.println("You chose human");
-                myChar.race = "human";
-                break;
-                case 2: System.out.println("You chose dwarf");
-                myChar.race = "dwarf";
-                break;
-                case 3: System.out.println("You chose elf");
-                myChar.race = "elf";
-                break;
-                case 4: System.out.println("You chose halfling");
-                myChar.race = "halfling";
-                break;
-                default: System.out.println("You chose snail. Excellent choice.");
+                // int myRaceChoice = scan.nextInt();
+
+                // switch(myRaceChoice) {
+                // case 1: System.out.println("You chose human");
+                // myChar.race = "human";
+                // break;
+                // case 2: System.out.println("You chose dwarf");
+                // myChar.race = "dwarf";
+                // break;
+                // case 3: System.out.println("You chose elf");
+                // myChar.race = "elf";
+                // break;
+                // case 4: System.out.println("You chose halfling");
+                // myChar.race = "halfling";
+                // break;
+                // default: System.out.println("You chose snail. Excellent choice.");
                 // need a custom exception here
-                }
 
                 System.out.println("Let's see what " + myChar.name + " is good for.");
 
