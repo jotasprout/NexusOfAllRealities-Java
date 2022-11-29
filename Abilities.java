@@ -4,12 +4,12 @@ public class Abilities {
 
     static String[] abilities = { "strength", "dexterity", "constitution", "intelligence", "wisdom", "charisma" };
 
-    HashMap<String, Integer> abilityRollScores = new HashMap<String, Integer>();
-
     static Character rollForAbilities(Character myChar) {
 
-        //Character myChar = new Character();
-        //myChar = aChar;
+        HashMap<String, Integer> abilityScores = new HashMap<String, Integer>();
+
+        // Character myChar = new Character();
+        // myChar = aChar;
 
         for (String ability : abilities) {
             System.out.println("Rolling for " + ability + " ...");
@@ -19,32 +19,32 @@ public class Abilities {
                 case "strength":
                     System.out.println(ability + " is " + thisRoll.abilityRoll + ".\n");
                     myChar.strength = thisRoll.abilityRoll;
-                    // add this score to myChar.abilityScores
+                    abilityScores.put(ability, thisRoll.abilityRoll);
                     break;
                 case "dexterity":
                     System.out.println(ability + " is " + thisRoll.abilityRoll + ".\n");
                     myChar.dexterity = thisRoll.abilityRoll;
-                    // add this score to myChar.abilityScores
+                    abilityScores.put(ability, thisRoll.abilityRoll);
                     break;
                 case "constitution":
                     System.out.println(ability + " is " + thisRoll.abilityRoll + ".\n");
                     myChar.constitution = thisRoll.abilityRoll;
-                    // add this score to myChar.abilityScores
+                    abilityScores.put(ability, thisRoll.abilityRoll);
                     break;
                 case "intelligence":
                     System.out.println(ability + " is " + thisRoll.abilityRoll + ".\n");
                     myChar.intelligence = thisRoll.abilityRoll;
-                    // add this score to myChar.abilityScores
+                    abilityScores.put(ability, thisRoll.abilityRoll);
                     break;
                 case "wisdom":
                     System.out.println(ability + " is " + thisRoll.abilityRoll + ".\n");
                     myChar.wisdom = thisRoll.abilityRoll;
-                    // add this score to myChar.abilityScores
+                    abilityScores.put(ability, thisRoll.abilityRoll);
                     break;
                 case "charisma":
                     System.out.println(ability + " is " + thisRoll.abilityRoll + ".\n");
                     myChar.charisma = thisRoll.abilityRoll;
-                    // add this score to myChar.abilityScores
+                    abilityScores.put(ability, thisRoll.abilityRoll);
                     break;
                 default:
                     System.out.println("You need better dice.");
@@ -53,6 +53,7 @@ public class Abilities {
 
         }
 
+        myChar.myAbilityScores = abilityScores;
         return myChar;
     }
 }

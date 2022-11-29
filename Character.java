@@ -1,4 +1,5 @@
 import java.lang.Override;
+import java.util.HashMap;
 
 public class Character {
 
@@ -19,17 +20,36 @@ public class Character {
     }
 
     String race;
-    String getRace(){return race;};
+
+    String getRace() {
+        return race;
+    };
+
     void setRace(String aRace) {
         race = aRace;
     }
 
+    String subRace;
+
+    String getSubRace() {
+        return subRace;
+    };
+
+    void setSubRace(String aSubRace) {
+        subRace = aSubRace;
+    }
+
     String career;
-    String getCareer(){return career;};
+
+    String getCareer() {
+        return career;
+    };
+
     void setCareer(String aCareer) {
         career = aCareer;
     }
 
+    // ALIGNMENT
     String[] morality = { "Evil", "Good", "Neutral" };
     String[] order = { "Chaotic", "Lawful", "True" };
 
@@ -38,8 +58,11 @@ public class Character {
 
     int armorClass;
     int hitPoints;
+    int hitDie;
 
     // ABILITIES
+
+    HashMap<String, Integer> myAbilityScores = new HashMap<String, Integer>();
 
     int strength;
     int dexterity;
@@ -50,6 +73,12 @@ public class Character {
 
     int proficiencyBonus;
 
+    // MAGIC
+    boolean magicUser;
+
+    // EQUIPMENT
+
+    // WEALTH
     int goldPieces;
     int silverPieces;
     int copperPieces;

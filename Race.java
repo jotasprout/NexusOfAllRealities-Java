@@ -9,10 +9,10 @@ public class Race {
         Scanner scan = new Scanner(System.in);
 
         System.out.println("\nWhat race is your character (type a number)?\n"
-                + "[1] Human\n"
-                + "[2] Dwarf\n"
-                + "[3] Elf\n"
-                + "[4] Halfling\n");
+            + "[1] Human\n"
+            + "[2] Dwarf\n"
+            + "[3] Elf\n"
+            + "[4] Halfling\n");
 
         int myRaceChoice = scan.nextInt();
 
@@ -40,7 +40,6 @@ public class Race {
 
         scan.close();
         return race;
-
+        
     }
-
 }
