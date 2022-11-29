@@ -18,10 +18,17 @@ public class Character {
         charisma = 0;
     }
 
-    static int[] abilityScores;
-
     String race;
+    String getRace(){return race;};
+    void setRace(String aRace) {
+        race = aRace;
+    }
+
     String career;
+    String getCareer(){return career;};
+    void setCareer(String aCareer) {
+        career = aCareer;
+    }
 
     String[] morality = { "Evil", "Good", "Neutral" };
     String[] order = { "Chaotic", "Lawful", "True" };

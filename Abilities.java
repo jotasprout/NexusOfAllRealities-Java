@@ -1,12 +1,15 @@
+import java.util.HashMap;
+
 public class Abilities {
 
     static String[] abilities = { "strength", "dexterity", "constitution", "intelligence", "wisdom", "charisma" };
 
-    static Character rollForAbilities(Character aChar) {
+    HashMap<String, Integer> abilityRollScores = new HashMap<String, Integer>();
 
-        Character myChar = new Character();
+    static Character rollForAbilities(Character myChar) {
 
-        myChar = aChar;
+        //Character myChar = new Character();
+        //myChar = aChar;
 
         for (String ability : abilities) {
             System.out.println("Rolling for " + ability + " ...");
