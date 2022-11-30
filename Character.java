@@ -65,11 +65,64 @@ public class Character {
     HashMap<String, Integer> myAbilityScores = new HashMap<String, Integer>();
 
     int strength;
+
+    int getStrength() {
+        return strength;
+    };
+
+    void setStrength(int strengthScore) {
+        strength = strengthScore;
+    }
+
     int dexterity;
+
+    int getDexterity() {
+        return dexterity;
+    };
+
+    void setDexterity(int dexterityScore) {
+        dexterity = dexterityScore;
+    }
+
     int constitution;
+
+    int getConstitution() {
+        return constitution;
+    };
+
+    void setConstitution(int constitutionScore) {
+        constitution = constitutionScore;
+    }
+
     int intelligence;
+
+    int getIntelligence() {
+        return intelligence;
+    };
+
+    void setIntelligence(int intelligenceScore) {
+        intelligence = intelligenceScore;
+    }
+
     int wisdom;
+
+    int getWisdom() {
+        return wisdom;
+    };
+
+    void setWisdom(int wisdomScore) {
+        wisdom = wisdomScore;
+    }
+
     int charisma;
+
+    int getCharisma() {
+        return charisma;
+    };
+
+    void setCharisma(int charismaScore) {
+        charisma = charismaScore;
+    }
 
     int proficiencyBonus;
 

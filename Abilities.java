@@ -8,9 +8,6 @@ public class Abilities {
 
         HashMap<String, Integer> abilityScores = new HashMap<String, Integer>();
 
-        // Character myChar = new Character();
-        // myChar = aChar;
-
         for (String ability : abilities) {
             System.out.println("Rolling for " + ability + " ...");
             AbilityRoll thisRoll = new AbilityRoll();
