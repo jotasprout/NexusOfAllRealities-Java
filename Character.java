@@ -138,10 +138,9 @@ public class Character {
 
     @Override
     public String toString() {
-        return "Name: " + name + ", Level: " + level + ", Race: " + race + ", Strength: " + strength + ", Dexterity: "
-                + dexterity + ", Constitution: " + constitution + ", Intelligence: " + intelligence + ", Wisdom: "
-                + wisdom + ", Charisma: " + charisma;
-        // return "Name: " + name + ", is a " + race + " Level " + level + " " +
-        // profession;
+        return "Name: " + name + ", Level: " + level + ", Race: " + race + ", Charisma: " + charisma + ", Constitution: " + constitution + ", Dexterity: "
+        + dexterity + ", Intelligence: " + intelligence + ", Strength: " + strength + ", Wisdom: "
+                + wisdom;
+
     }
 }
