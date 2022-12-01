@@ -26,7 +26,7 @@ public class Character {
     };
 
     void setRace(String aRace) {
-        race = aRace;
+        this.race = aRace;
     }
 
     String subRace;
@@ -36,7 +36,7 @@ public class Character {
     };
 
     void setSubRace(String aSubRace) {
-        subRace = aSubRace;
+        this.subRace = aSubRace;
     }
 
     String career;

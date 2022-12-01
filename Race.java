@@ -24,17 +24,22 @@ public class Race {
             case 1:
                 System.out.println("\nYou chose human.\n");
                 race = "human";
+                // chooseSubRace(myRaceChoice);
                 break;
             case 2:
                 System.out.println("\nYou chose dwarf.\n");
                 race = "dwarf";
+                // chooseSubRace(myRaceChoice);
+
                 break;
             case 3:
                 System.out.println("\nYou chose elf.\n");
+                // chooseSubRace(myRaceChoice);
                 race = "elf";
                 break;
             case 4:
                 System.out.println("\nYou chose halfling.\n");
+                // chooseSubRace(myRaceChoice);
                 race = "halfling";
                 break;
             default:
@@ -49,10 +54,10 @@ public class Race {
 
     }
 
-    static string chooseSubRace(int myRaceChoice) {
+    static String chooseSubRace(int myRaceChoice) {
 
         Scanner scan = new Scanner(System.in);
-        int mySubRaceChoice = scan.nextInt();
+        // int mySubRaceChoice = scan.nextInt();
 
         switch (myRaceChoice) {
             case 1: // Human
@@ -61,15 +66,15 @@ public class Race {
                 break;
             case 2: // Dwarf
                 chooseSubDwarf();
-                subRace = mySubDwarf;
+                // subRace = mySubDwarf;
                 // subRace = chooseSubDwarf();
                 break;
             case 3: // Elf
-                System.out.println("\nChoose an Elf sub-race.\n");
+                // chooseSubElf();
                 subRace = subElf;
                 break;
             case 4: // Halfling
-                System.out.println("\nChoose a Halfling sub-race.\n");
+                // chooseSubHalfling();
                 subRace = subHalfling;
                 break;
             default:
@@ -77,12 +82,13 @@ public class Race {
                 // need a custom exception here
         }
 
+        scan.close();
         return subRace;
     }
 
-    static string chooseSubDwarf() {
+    static String chooseSubDwarf() {
 
-        string mySubDwarf;
+        // string mySubDwarf;
 
         Scanner scan = new Scanner(System.in);
 
@@ -96,15 +102,15 @@ public class Race {
         switch (mySubDwarfChoice) {
             case 1:
                 System.out.println("\nYou chose Hill Dwarf.\n");
-                mySubDwarf = "Hill Dwarf";
+                subRace = "Hill Dwarf";
                 break;
             case 2:
                 System.out.println("\nYou chose Mountain Dwarf.\n");
-                mySubDwarf = "Mountain Dwarf";
+                subRace = "Mountain Dwarf";
                 break;
             case 3:
                 System.out.println("\nYou chose none.\n");
-                mySubDwarf = "none";
+                subRace = "none";
                 break;
             default:
                 System.out.println("You chose regular old Dwarf. Nothing wrong with that.\n");
@@ -112,12 +118,12 @@ public class Race {
         // need a custom exception here if int < 1 and int > 3
 
         scan.close();
-        return mySubDwarf;
+        return subRace;
     }
 
-    static string chooseSubElf() {
+    static String chooseSubElf() {
 
-        string mySubElf;
+        // String mySubElf;
 
         Scanner scan = new Scanner(System.in);
 
@@ -132,19 +138,19 @@ public class Race {
         switch (mySubElfChoice) {
             case 1:
                 System.out.println("\nYou chose High Elf.\n");
-                mySubElf = "High Elf";
+                subRace = "High Elf";
                 break;
             case 2:
                 System.out.println("\nYou chose Wood Elf.\n");
-                mySubElf = "Wood Elf";
+                subRace = "Wood Elf";
                 break;
             case 3:
                 System.out.println("\nYou chose Dark Elf.\n");
-                mySubElf = "Dark Elf";
+                subRace = "Dark Elf";
                 break;
             case 4:
                 System.out.println("\nYou chose none.\n");
-                mySubElf = "none";
+                subRace = "none";
                 break;
             default:
                 System.out.println("You chose just Elf.\n");
@@ -152,16 +158,16 @@ public class Race {
         // need a custom exception here if int < 1 and int > 4
 
         scan.close();
-        return mySubElf;
+        return subRace;
     }
 
-    static string chooseSubHalfling() {
+    static String chooseSubHalfling() {
 
-        string mySubHalfling;
+        // String mySubHalfling;
 
         Scanner scan = new Scanner(System.in);
 
-        System.out.println("\nChoose an Elf sub-race.\n"
+        System.out.println("\nChoose a Halfling sub-race.\n"
                 + "[1] Lightfoot Halfling\n"
                 + "[2] Stout Halfling\n"
                 + "[3] None\n");
@@ -171,15 +177,15 @@ public class Race {
         switch (mySubHalflingChoice) {
             case 1:
                 System.out.println("\nYou chose Lightfoot Halfling.\n");
-                mySubHalfling = "Lightfoot Halfling";
+                subRace = "Lightfoot Halfling";
                 break;
             case 2:
                 System.out.println("\nYou chose Stout Halfling.\n");
-                mySubHalfling = "Stout Halfling";
+                subRace = "Stout Halfling";
                 break;
             case 3:
                 System.out.println("\nYou chose none.\n");
-                mySubHalfling = "none";
+                subRace = "none";
                 break;
             default:
                 System.out.println("You chose a humble Halfling. Good for you.\n");
@@ -187,6 +193,6 @@ public class Race {
         // need a custom exception here if int < 1 and int > 3
 
         scan.close();
-        return mySubHalfling;
+        return subRace;
     }
 }
