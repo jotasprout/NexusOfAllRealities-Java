@@ -13,19 +13,19 @@ public class Abilities {
             AbilityRoll thisRoll = new AbilityRoll();
 
             switch (ability) {
-                case "strength":
+                case "charisma":
                     System.out.println(ability + " is " + thisRoll.abilityRoll + ".\n");
-                    myChar.strength = thisRoll.abilityRoll;
+                    myChar.charisma = thisRoll.abilityRoll;
                     abilityScores.put(ability, thisRoll.abilityRoll);
-                    break;
-                case "dexterity":
-                    System.out.println(ability + " is " + thisRoll.abilityRoll + ".\n");
-                    myChar.dexterity = thisRoll.abilityRoll;
-                    abilityScores.put(ability, thisRoll.abilityRoll);
-                    break;
+                    break;                
                 case "constitution":
                     System.out.println(ability + " is " + thisRoll.abilityRoll + ".\n");
                     myChar.constitution = thisRoll.abilityRoll;
+                    abilityScores.put(ability, thisRoll.abilityRoll);
+                    break;                
+                case "dexterity":
+                    System.out.println(ability + " is " + thisRoll.abilityRoll + ".\n");
+                    myChar.dexterity = thisRoll.abilityRoll;
                     abilityScores.put(ability, thisRoll.abilityRoll);
                     break;
                 case "intelligence":
@@ -33,14 +33,14 @@ public class Abilities {
                     myChar.intelligence = thisRoll.abilityRoll;
                     abilityScores.put(ability, thisRoll.abilityRoll);
                     break;
+                    case "strength":
+                    System.out.println(ability + " is " + thisRoll.abilityRoll + ".\n");
+                    myChar.strength = thisRoll.abilityRoll;
+                    abilityScores.put(ability, thisRoll.abilityRoll);
+                    break;                    
                 case "wisdom":
                     System.out.println(ability + " is " + thisRoll.abilityRoll + ".\n");
                     myChar.wisdom = thisRoll.abilityRoll;
-                    abilityScores.put(ability, thisRoll.abilityRoll);
-                    break;
-                case "charisma":
-                    System.out.println(ability + " is " + thisRoll.abilityRoll + ".\n");
-                    myChar.charisma = thisRoll.abilityRoll;
                     abilityScores.put(ability, thisRoll.abilityRoll);
                     break;
                 default:

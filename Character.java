@@ -11,12 +11,12 @@ public class Character {
     public Character(String name) {
         this.name = name;
         level = 1;
-        strength = 0;
-        dexterity = 0;
-        constitution = 0;
-        intelligence = 0;
-        wisdom = 0;
         charisma = 0;
+        constitution = 0;
+        dexterity = 0;
+        intelligence = 0;
+        strength = 0;
+        wisdom = 0;
     }
 
     String race;
