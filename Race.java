@@ -8,7 +8,7 @@ public class Race {
     static String subElf;
     static String subHalfling;
 
-    static String chooseRace() {
+    static String chooseRace(Character aChar) {
 
         Scanner scan = new Scanner(System.in);
 
@@ -24,22 +24,21 @@ public class Race {
             case 1:
                 System.out.println("\nYou chose human.\n");
                 race = "human";
-                // chooseSubRace(myRaceChoice);
+                chooseSubRace(myRaceChoice, aChar);
                 break;
             case 2:
                 System.out.println("\nYou chose dwarf.\n");
                 race = "dwarf";
-                // chooseSubRace(myRaceChoice);
-
+                chooseSubRace(myRaceChoice, aChar);
                 break;
             case 3:
                 System.out.println("\nYou chose elf.\n");
-                // chooseSubRace(myRaceChoice);
+                chooseSubRace(myRaceChoice, aChar);
                 race = "elf";
                 break;
             case 4:
                 System.out.println("\nYou chose halfling.\n");
-                // chooseSubRace(myRaceChoice);
+                chooseSubRace(myRaceChoice, aChar);
                 race = "halfling";
                 break;
             default:
@@ -54,7 +53,7 @@ public class Race {
 
     }
 
-    static String chooseSubRace(int myRaceChoice) {
+    static String chooseSubRace(int myRaceChoice, Character myChar) {
 
         Scanner scan = new Scanner(System.in);
         // int mySubRaceChoice = scan.nextInt();
@@ -65,17 +64,16 @@ public class Race {
                 subRace = "none";
                 break;
             case 2: // Dwarf
-                chooseSubDwarf();
+                myChar.subRace = chooseSubDwarf();
                 // subRace = mySubDwarf;
                 // subRace = chooseSubDwarf();
                 break;
             case 3: // Elf
-                // chooseSubElf();
-                subRace = subElf;
+                myChar.subRace = chooseSubElf();
                 break;
             case 4: // Halfling
-                // chooseSubHalfling();
-                subRace = subHalfling;
+                myChar.subRace = chooseSubHalfling();
+                // subRace = subHalfling;
                 break;
             default:
                 System.out.println("You didn't have a choice. Just keep saying that.\n");

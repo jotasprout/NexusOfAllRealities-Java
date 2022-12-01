@@ -30,7 +30,7 @@ public class Main
 
         myChar = Abilities.rollForAbilities(myChar);
 
-        myChar.race = Race.chooseRace();
+        myChar.race = Race.chooseRace(myChar);
 
         System.out.println(myChar);
 
