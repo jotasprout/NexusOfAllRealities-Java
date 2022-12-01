@@ -1,5 +1,6 @@
 import java.lang.Override;
 import java.util.HashMap;
+import java.util.ArrayList;
 
 public class Character {
 
@@ -50,15 +51,16 @@ public class Character {
     }
 
     // ALIGNMENT
-    String[] morality = { "Evil", "Good", "Neutral" };
-    String[] order = { "Chaotic", "Lawful", "True" };
+    String alignment;
 
+    // EXPERIENCE
     int expPoints;
     int level;
 
+    // COMBAT
     int armorClass;
     int hitPoints;
-    int hitDie;
+    int hitDice;
 
     // ABILITIES
 
@@ -124,10 +126,13 @@ public class Character {
         charisma = charismaScore;
     }
 
+    // SKILLS and PROFICIENCIES
+    int numLanguages = 2;
+    ArrayList<String> languages = new ArrayList<String>();
     int proficiencyBonus;
 
     // MAGIC
-    boolean magicUser;
+    boolean magicUser = false;
 
     // EQUIPMENT
 

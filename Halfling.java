@@ -2,8 +2,8 @@ public class Halfling {
     // HitDice
     // HitPoints
     // AbilityScoreIncrease
-    // SavingThrows 
-    // Proficiencies 
+    // SavingThrows
+    // Proficiencies
     // Languages
     // Speed
     // Alignment

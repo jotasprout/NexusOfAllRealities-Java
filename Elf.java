@@ -1,5 +1,5 @@
-public class Elf {
-    // Hit Die
+public abstract class Elf {
+    // Hit Dice
     // Hit Point maximum increase
     // Ability Score increase
     // Saving Throw Proficiencies 
