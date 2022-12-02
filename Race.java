@@ -8,7 +8,7 @@ public class Race {
     static String subElf;
     static String subHalfling;
 
-    static String chooseRace(Character aChar) {
+    static Character chooseRace(Character aChar) {
 
         Scanner scan = new Scanner(System.in);
 
@@ -23,24 +23,27 @@ public class Race {
         switch (myRaceChoice) {
             case 1:
                 System.out.println("\nYou chose human.\n");
-                race = "human";
+                aChar.race = "human";
+                Human.beHuman(aChar);
                 chooseSubRace(myRaceChoice, aChar);
                 break;
             case 2:
                 System.out.println("\nYou chose dwarf.\n");
-                race = "dwarf";
+                aChar.race = "dwarf";
+                Dwarf.beDwarf(aChar);
                 chooseSubRace(myRaceChoice, aChar);
                 break;
             case 3:
                 System.out.println("\nYou chose elf.\n");
-                chooseSubRace(myRaceChoice, aChar);
-                race = "elf";
+                aChar.race = "elf";
                 Elf.beElf(aChar);
+                chooseSubRace(myRaceChoice, aChar);
                 break;
             case 4:
                 System.out.println("\nYou chose halfling.\n");
+                aChar.race = "halfling";
+                Halfling.beHalfling(aChar);
                 chooseSubRace(myRaceChoice, aChar);
-                race = "halfling";
                 break;
             default:
                 System.out.println("You chose snail. Excellent choice.\n");
@@ -50,7 +53,7 @@ public class Race {
         // need a custom exception here if int < 1 and int > 4
 
         scan.close();
-        return race;
+        return aChar;
 
     }
 
@@ -65,7 +68,7 @@ public class Race {
                 subRace = "none";
                 break;
             case 2: // Dwarf
-                myChar.subRace = chooseSubDwarf();
+                myChar.subRace = chooseSubDwarf(myChar);
                 // subRace = mySubDwarf;
                 // subRace = chooseSubDwarf();
                 break;
@@ -73,7 +76,7 @@ public class Race {
                 myChar.subRace = chooseSubElf(myChar);
                 break;
             case 4: // Halfling
-                myChar.subRace = chooseSubHalfling();
+                myChar.subRace = chooseSubHalfling(myChar);
                 // subRace = subHalfling;
                 break;
             default:
@@ -85,7 +88,7 @@ public class Race {
         return subRace;
     }
 
-    static String chooseSubDwarf() {
+    static String chooseSubDwarf(Character myChar) {
 
         // string mySubDwarf;
 
@@ -102,10 +105,12 @@ public class Race {
             case 1:
                 System.out.println("\nYou chose Hill Dwarf.\n");
                 subRace = "Hill Dwarf";
+                DwarfHill.beDwarfHill(myChar);
                 break;
             case 2:
                 System.out.println("\nYou chose Mountain Dwarf.\n");
                 subRace = "Mountain Dwarf";
+                DwarfMountain.beDwarfMountain(myChar);
                 break;
             case 3:
                 System.out.println("\nYou chose none.\n");
@@ -143,6 +148,7 @@ public class Race {
             case 2:
                 System.out.println("\nYou chose Wood Elf.\n");
                 subRace = "Wood Elf";
+                ElfWood.beElfWood(myChar);
                 break;
             case 3:
                 System.out.println("\nYou chose Dark Elf.\n");
@@ -161,7 +167,7 @@ public class Race {
         return subRace;
     }
 
-    static String chooseSubHalfling() {
+    static String chooseSubHalfling(Character myChar) {
 
         // String mySubHalfling;
 
@@ -178,10 +184,12 @@ public class Race {
             case 1:
                 System.out.println("\nYou chose Lightfoot Halfling.\n");
                 subRace = "Lightfoot Halfling";
+                HalflingLightfoot.beHalflingLightfoot(myChar);
                 break;
             case 2:
                 System.out.println("\nYou chose Stout Halfling.\n");
                 subRace = "Stout Halfling";
+                HalflingStout.beHalflingStout(myChar);
                 break;
             case 3:
                 System.out.println("\nYou chose none.\n");

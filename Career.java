@@ -2,7 +2,7 @@ import java.util.*;
 
 public class Career {
 
-    //static String career;
+    static String career;
 
     static Character chooseCareer(Character thisChar) {
 
@@ -20,21 +20,21 @@ public class Career {
             case 1:
                 System.out.println("\nYou chose Cleric.\n");
                 thisChar.career = "Cleric";
-                Cleric.beCleric(thisChar);
+                // Cleric.beCleric(thisChar);
                 break;
             case 2:
                 System.out.println("\nYou chose Fighter.\n");
                 thisChar.career = "Fighter";
-                Fighter.beFighter(thisChar);
+                // Fighter.beFighter(thisChar);
                 break;
             case 3:
                 System.out.println("\nYou chose Thief.\n");
-                Thief.beThief(thisChar);
+                // Thief.beThief(thisChar);
                 thisChar.career = "Thief";
                 break;
             case 4:
                 System.out.println("\nYou chose Wizard.\n");
-                Wizard.beWizard(thisChar);
+                // Wizard.beWizard(thisChar);
                 thisChar.career = "Wizard";
                 break;
             default:

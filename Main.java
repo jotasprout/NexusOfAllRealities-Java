@@ -24,16 +24,16 @@ public class Main
         System.out.println("What is your character's name?\n");
 
         String myName = scan.nextLine();
+
         Character myChar = new Character(myName);
-        scan.close();
 
         System.out.println("\nLet's see what " + myChar.name + " is good for.\n");
 
         myChar = Abilities.rollForAbilities(myChar);
 
-        myChar.race = Race.chooseRace(myChar);
+        myChar = Race.chooseRace(myChar);
 
-        //myChar = Career.chooseCareer(myChar);
+        myChar = Career.chooseCareer(myChar);
 
         System.out.println(myChar);
 
@@ -41,6 +41,7 @@ public class Main
             System.out.println(i + ": " + myChar.myAbilityScores.get(i));
         }
 
+        scan.close();
     }
 
 }
