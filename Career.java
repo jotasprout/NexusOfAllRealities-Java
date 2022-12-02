@@ -2,9 +2,9 @@ import java.util.*;
 
 public class Career {
 
-    static String career;
+    //static String career;
 
-    static String chooseCareer(Character aChar) {
+    static Character chooseCareer(Character thisChar) {
 
         Scanner scan = new Scanner(System.in);
 
@@ -19,23 +19,23 @@ public class Career {
         switch (myCareerChoice) {
             case 1:
                 System.out.println("\nYou chose Cleric.\n");
-                //aChar.career = "Cleric";
-                Cleric.beCleric(aChar);
+                thisChar.career = "Cleric";
+                Cleric.beCleric(thisChar);
                 break;
             case 2:
                 System.out.println("\nYou chose Fighter.\n");
-                //aChar.career = "Fighter";
-                Fighter.beFighter(aChar);
+                thisChar.career = "Fighter";
+                Fighter.beFighter(thisChar);
                 break;
             case 3:
                 System.out.println("\nYou chose Thief.\n");
-                Thief.beThief(aChar);
-                //aChar.career = "Thief";
+                Thief.beThief(thisChar);
+                thisChar.career = "Thief";
                 break;
             case 4:
                 System.out.println("\nYou chose Wizard.\n");
-                Wizard.beWizard(aChar);
-                //aChar.career = "Wizard";
+                Wizard.beWizard(thisChar);
+                thisChar.career = "Wizard";
                 break;
             default:
                 System.out.println("You chose lobster. Excellent choice.\n");
@@ -45,7 +45,7 @@ public class Career {
         // need a custom exception here if int < 1 and int > 4
 
         scan.close();
-        return career;
+        return thisChar;
 
     }
 

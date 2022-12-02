@@ -33,7 +33,7 @@ public class Main
 
         myChar.race = Race.chooseRace(myChar);
 
-        myChar.career = Career.chooseCareer(myChar);
+        //myChar = Career.chooseCareer(myChar);
 
         System.out.println(myChar);
 
