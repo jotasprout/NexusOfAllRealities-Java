@@ -5,9 +5,6 @@ public class Main
 {
     public static void main(String args[]) {
 
-        // SCANNER CREATION
-        Scanner scan = new Scanner(System.in);
-
         System.out.println("Are you old like me and tried to teach your children Dungeons & Dragons?\n");
 
         System.out.println("Felt even more stupid than when you try to help with their homework, right?\n");
@@ -21,18 +18,22 @@ public class Main
         System.out.println(
                 "We'll start creating your character by naming it -- you can always change the name later if you feel Dwarf parents would't really name their daughter Bernie.\n");
 
+        // SCANNER CREATION
+        Scanner scan = new Scanner(System.in);
+
         System.out.println("What is your character's name?\n");
 
         String myName = scan.nextLine();
         Character myChar = new Character(myName);
+        scan.close();
 
         System.out.println("\nLet's see what " + myChar.name + " is good for.\n");
 
         myChar = Abilities.rollForAbilities(myChar);
 
-        myChar.career = Career.chooseCareer(myChar);
-
         myChar.race = Race.chooseRace(myChar);
+
+        myChar.career = Career.chooseCareer(myChar);
 
         System.out.println(myChar);
 
@@ -40,7 +41,6 @@ public class Main
             System.out.println(i + ": " + myChar.myAbilityScores.get(i));
         }
 
-        scan.close();
     }
 
 }

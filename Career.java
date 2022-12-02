@@ -19,23 +19,23 @@ public class Career {
         switch (myCareerChoice) {
             case 1:
                 System.out.println("\nYou chose Cleric.\n");
-                aChar.career = "Cleric";
+                //aChar.career = "Cleric";
                 Cleric.beCleric(aChar);
                 break;
             case 2:
                 System.out.println("\nYou chose Fighter.\n");
-                aChar.career = "Fighter";
+                //aChar.career = "Fighter";
                 Fighter.beFighter(aChar);
                 break;
             case 3:
                 System.out.println("\nYou chose Thief.\n");
                 Thief.beThief(aChar);
-                aChar.career = "Thief";
+                //aChar.career = "Thief";
                 break;
             case 4:
                 System.out.println("\nYou chose Wizard.\n");
                 Wizard.beWizard(aChar);
-                aChar.career = "Wizard";
+                //aChar.career = "Wizard";
                 break;
             default:
                 System.out.println("You chose lobster. Excellent choice.\n");
