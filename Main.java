@@ -34,8 +34,12 @@ public class Main
 
         System.out.println(myChar);
 
+        // for (String i : myChar.myAbilityScores.keySet()) {
+        //     System.out.println("key: " + i + " value: " + myChar.myAbilityScores.get(i));
+        // }
+
         for (String i : myChar.myAbilityScores.keySet()) {
-            System.out.println("key: " + i + " value: " + myChar.myAbilityScores.get(i));
+            System.out.println(i + ": " + myChar.myAbilityScores.get(i));
         }
 
         scan.close();

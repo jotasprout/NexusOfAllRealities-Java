@@ -35,6 +35,7 @@ public class Race {
                 System.out.println("\nYou chose elf.\n");
                 chooseSubRace(myRaceChoice, aChar);
                 race = "elf";
+                Elf.beElf(aChar);
                 break;
             case 4:
                 System.out.println("\nYou chose halfling.\n");
@@ -69,7 +70,7 @@ public class Race {
                 // subRace = chooseSubDwarf();
                 break;
             case 3: // Elf
-                myChar.subRace = chooseSubElf();
+                myChar.subRace = chooseSubElf(myChar);
                 break;
             case 4: // Halfling
                 myChar.subRace = chooseSubHalfling();
@@ -119,7 +120,7 @@ public class Race {
         return subRace;
     }
 
-    static String chooseSubElf() {
+    static String chooseSubElf(Character myChar) {
 
         // String mySubElf;
 
@@ -136,6 +137,7 @@ public class Race {
         switch (mySubElfChoice) {
             case 1:
                 System.out.println("\nYou chose High Elf.\n");
+                ElfHigh.beElfHigh(myChar);
                 subRace = "High Elf";
                 break;
             case 2:
