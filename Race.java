@@ -59,8 +59,8 @@ public class Race {
 
     static String chooseSubRace(int myRaceChoice, Character myChar) {
 
-        Scanner scan = new Scanner(System.in);
-        // int mySubRaceChoice = scan.nextInt();
+        //Scanner scan = new Scanner(System.in);
+        //int mySubRaceChoice = scan.nextInt();
 
         switch (myRaceChoice) {
             case 1: // Human
@@ -84,7 +84,7 @@ public class Race {
                 // need a custom exception here
         }
 
-        scan.close();
+        //scan.close();
         return subRace;
     }
 
