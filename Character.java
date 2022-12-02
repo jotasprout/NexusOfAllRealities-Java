@@ -153,7 +153,8 @@ public class Character {
         + "\n, Level: " + level 
         + "\n, Race: " + race 
         + "\n, SubRace: " + subRace 
-        + ".\n, Wealth: " + goldPieces + " gold pieces.";
+        + "\n, Hit Points: " + hitPoints 
+        + "\n, Wealth: " + goldPieces + " gold pieces";
     }
 
 }
