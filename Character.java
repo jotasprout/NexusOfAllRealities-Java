@@ -151,6 +151,7 @@ public class Character {
     public String toString() {
         return "Name: " + name 
         + "\n, Level: " + level 
+        + "\n, Career: " + career 
         + "\n, Race: " + race 
         + "\n, SubRace: " + subRace 
         + "\n, Hit Points: " + hitPoints 
