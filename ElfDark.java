@@ -1,11 +1,11 @@
 public class ElfDark extends Elf {
-    // HitDice
-    // HitPoints
+
+    static Character beElfDark (Character myChar){
+
+        return myChar;
+    }
     // AbilityScoreIncrease
-    // SavingThrows 
-    // Proficiencies 
+    // Proficiencies
     // Languages
-    // Speed
-    // Alignment
-    // CombatProficiency    
+    // Speed   
 }

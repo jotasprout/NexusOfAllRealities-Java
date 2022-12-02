@@ -1,11 +1,11 @@
 public class HalflingLightfoot extends Halfling {
-    // HitDice
-    // HitPoints
+
+    static Character beHalflingLightfoot (Character myChar){
+
+        return myChar;
+    }
     // AbilityScoreIncrease
-    // SavingThrows 
-    // Proficiencies 
+    // Proficiencies
     // Languages
     // Speed
-    // Alignment
-    // CombatProficiency
 }

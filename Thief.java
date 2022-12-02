@@ -1,7 +1,7 @@
 public class Thief extends Character {
     // HitDice
     // HitPoints
-    // PrimaryAbility
+    // PrimeRequisite
     // SavingThrows 
     // Proficiencies 
     // Skills

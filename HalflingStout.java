@@ -1,11 +1,12 @@
 public class HalflingStout extends Halfling {
-    // HitDice
-    // HitPoints
+
+    static Character beHalflingStout(Character myChar) {
+
+        return myChar;
+    }
+
     // AbilityScoreIncrease
-    // SavingThrows 
-    // Proficiencies 
+    // Proficiencies
     // Languages
     // Speed
-    // Alignment
-    // CombatProficiency
 }

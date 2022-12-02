@@ -1,11 +1,11 @@
 public class DwarfMountain extends Dwarf {
-    // HitDice
-    // HitPoints
+
+    static Character beDwarfMountain (Character myChar){
+
+        return myChar;
+    }
     // AbilityScoreIncrease
-    // SavingThrows 
-    // Proficiencies 
+    // Proficiencies
     // Languages
     // Speed
-    // Alignment
-    // CombatProficiency
 }

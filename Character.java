@@ -59,8 +59,9 @@ public class Character {
 
     // COMBAT
     int armorClass;
+    int hitDice;    
     int hitPoints;
-    int hitDice;
+    int maxHitPoints;
 
     // ABILITIES
 
@@ -127,12 +128,17 @@ public class Character {
     }
 
     // SKILLS and PROFICIENCIES
+    int speed;
     int numLanguages = 2;
     ArrayList<String> languages = new ArrayList<String>();
     int proficiencyBonus;
 
     // MAGIC
     boolean magicUser = false;
+    int numCantrips = 0;
+    ArrayList<String> cantrips = new ArrayList<String>();
+    int numSpells = 0;
+    ArrayList<String> spells = new ArrayList<String>();
 
     // EQUIPMENT
 
@@ -146,13 +152,4 @@ public class Character {
         return "Name: " + name + ", Level: " + level + ", Race: " + race + ", SubRace: " + subRace + ".\n";
     }
 
-    // @Override
-    // public String toString() {
-    // return "Name: " + name + ", Level: " + level + ", Race: " + race + ",
-    // SubRace: " + subRace + ", Charisma: "
-    // + charisma + ", Constitution: " + constitution + ", Dexterity: "
-    // + dexterity + ", Intelligence: " + intelligence + ", Strength: " + strength +
-    // ", Wisdom: "
-    // + wisdom;
-    // }
 }

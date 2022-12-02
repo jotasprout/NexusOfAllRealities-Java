@@ -5,16 +5,10 @@ public abstract class Elf {
         int newDex = oldDex + 2;
         myChar.dexterity = newDex;
         System.out.println("\nYour Dexterity roll was " + oldDex + ". Your Dexterity as an Elf is " + newDex + ".\n");
+        myChar.languages.add("Common");
+        myChar.languages.add("Elvish");
+        myChar.speed = 25;
         return myChar;
     }
-    // Hit Dice
-    // Hit Point maximum increase
-    // Ability Score increase
-    // Saving Throw Proficiencies 
-    // Saving Throws
-    // Other proficiencies
-    // Languages
-    // Speed
-    // Alignment
-    // Combat proficiency
+    // Minimum Intelligence = 9
 }
