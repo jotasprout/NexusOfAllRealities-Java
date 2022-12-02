@@ -7,7 +7,7 @@ public class Dice {
     static int fourSidedRoll;
 
     // roll one four-sided die
-    static int fourSixSided() {
+    static int rollFourSided() {
         Random objGenerator = new Random();
         int randomFourSidedNum = objGenerator.nextInt(4);
         fourSidedRoll = randomFourSidedNum;

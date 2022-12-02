@@ -149,7 +149,11 @@ public class Character {
 
     @Override
     public String toString() {
-        return "Name: " + name + ", Level: " + level + ", Race: " + race + ", SubRace: " + subRace + ".\n";
+        return "Name: " + name 
+        + "\n, Level: " + level 
+        + "\n, Race: " + race 
+        + "\n, SubRace: " + subRace 
+        + ".\n, Wealth: " + goldPieces + " gold pieces.";
     }
 
 }

@@ -1,4 +1,4 @@
-public class MagicUser extends Character {
+public class MagicUser {
     // HitDice
     // HitPoints
     // PrimaryAbility

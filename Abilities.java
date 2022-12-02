@@ -55,6 +55,7 @@ public class Abilities {
             }
 
         }
+        // Add methods that check for sucky rolls
 
         myChar.myAbilityScores = abilityScores;
         return myChar;

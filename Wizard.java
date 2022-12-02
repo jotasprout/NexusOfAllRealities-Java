@@ -1,8 +1,9 @@
-public class Fighter {
-    static Character beFighter (Character myChar){
-        myChar.hitDice = 10;
-        int numWealthRolls = 5;
+public class Wizard {
+    static Character beWizard (Character myChar){
+        myChar.hitDice = 6;
+        int numWealthRolls = 4;
         myChar.goldPieces = Wealth.rollForStartingWealth(numWealthRolls);
+
         return myChar;
     }    
     
