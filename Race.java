@@ -24,6 +24,7 @@ public class Race {
             case 1:
                 System.out.println("\nYou chose human.\n");
                 aChar.race = "human";
+                // method to increase every ability score by one
                 Human.beHuman(aChar);
                 chooseSubRace(myRaceChoice, aChar);
                 break;
@@ -52,15 +53,15 @@ public class Race {
 
         // need a custom exception here if int < 1 and int > 4
 
-        scan.close();
+        // scan.close();
         return aChar;
 
     }
 
     static String chooseSubRace(int myRaceChoice, Character myChar) {
 
-        //Scanner scan = new Scanner(System.in);
-        //int mySubRaceChoice = scan.nextInt();
+        // Scanner scan = new Scanner(System.in);
+        // int mySubRaceChoice = scan.nextInt();
 
         switch (myRaceChoice) {
             case 1: // Human
@@ -84,7 +85,7 @@ public class Race {
                 // need a custom exception here
         }
 
-        //scan.close();
+        // scan.close();
         return subRace;
     }
 

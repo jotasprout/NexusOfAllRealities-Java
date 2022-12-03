@@ -1,10 +1,12 @@
 public class Halfling {
 
-    static Character beHalfling (Character myChar){
+    static Character beHalfling(Character myChar) {
         int oldDex = myChar.dexterity;
         int newDex = oldDex + 2;
         myChar.dexterity = newDex;
-        System.out.println("\nYour Dexterity roll was " + oldDex + ". Your Dexterity as a Halfling is " + newDex + ".\n");        
+        myChar.myAbilityScores.put("dexterity", newDex);
+        System.out
+                .println("\nYour Dexterity roll was " + oldDex + ". Your Dexterity as a Halfling is " + newDex + ".\n");
         myChar.speed = 25;
         myChar.languages.add("Common");
         myChar.languages.add("Halfling");

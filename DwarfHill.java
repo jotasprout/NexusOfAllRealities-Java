@@ -1,6 +1,6 @@
 public class DwarfHill extends Dwarf {
 
-    static Character beDwarfHill (Character myChar){
+    static Character beDwarfHill(Character myChar) {
         int oldmaxHP = myChar.maxHitPoints;
         int newmaxHP = oldmaxHP + 1;
         myChar.maxHitPoints = newmaxHP;
