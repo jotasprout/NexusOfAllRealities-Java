@@ -14,27 +14,27 @@ public class Career {
                 + "[3] Thief\n"
                 + "[4] Wizard\n");
 
-        String myCareerChoice = scan.nextLine();
+        // String myCareerChoice = scan.nextLine();
         // int nextInt = Integer.parseInt(nextIntString);
-        // int myCareerChoice = nextInt;
+        int myCareerChoice = scan.nextInt();
 
         switch (myCareerChoice) {
-            case "Cleric":
+            case 1:
                 System.out.println("\nYou chose Cleric.\n");
                 thisChar.career = "Cleric";
                 Cleric.beCleric(thisChar);
                 break;
-            case "Fighter":
+            case 2:
                 System.out.println("\nYou chose Fighter.\n");
                 thisChar.career = "Fighter";
                 Fighter.beFighter(thisChar);
                 break;
-            case "Thief":
+            case 3:
                 System.out.println("\nYou chose Thief.\n");
                 Thief.beThief(thisChar);
                 thisChar.career = "Thief";
                 break;
-            case "Wizard":
+            case 4:
                 System.out.println("\nYou chose Wizard.\n");
                 Wizard.beWizard(thisChar);
                 thisChar.career = "Wizard";

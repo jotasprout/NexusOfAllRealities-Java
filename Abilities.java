@@ -57,7 +57,7 @@ public class Abilities {
         }
         // Add methods that check for sucky rolls
 
-        //myChar.myAbilityScores = abilityScores;
+        myChar.myAbilityScores = abilityScores;
         // does the above still work? or does it mess with the HashMap?
         return myChar;
     }
