@@ -15,7 +15,5 @@ public class Halfling {
     }
     // Minimum Dexterity = 9
     // Minimum Constitution = 9
-
     // Proficiencies
-
 }

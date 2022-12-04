@@ -12,8 +12,5 @@ public class HalflingStout extends Halfling {
         return myChar;
     }
 
-    // AbilityScoreIncrease
     // Proficiencies
-    // Languages
-    // Speed
 }

@@ -6,10 +6,8 @@ public class HalflingLightfoot extends Halfling {
         myChar.charisma = newCharisma;
         myChar.myAbilityScores.put("charisma", newCharisma);
         System.out.println("\nYour Charisma roll was " + oldCharisma + ". Your charisma as a Lightfoot Halfling is " + newCharisma + ".\n");          
-
         return myChar;
     }
 
     // Proficiencies
-
 }

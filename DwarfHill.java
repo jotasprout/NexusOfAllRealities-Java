@@ -17,5 +17,4 @@ public class DwarfHill extends Dwarf {
     }
 
     // Proficiencies
-
 }

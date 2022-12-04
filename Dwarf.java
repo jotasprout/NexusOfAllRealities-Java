@@ -15,8 +15,5 @@ public class Dwarf {
         return myChar;
     }
     // Minimum Constitution = 9
-
     // Proficiencies
-    // Languages
-    // Speed
 }

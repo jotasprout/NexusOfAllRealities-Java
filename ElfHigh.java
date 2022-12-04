@@ -14,5 +14,4 @@ public class ElfHigh extends Elf {
         // Cantrips = offer to choose a cantrip from a list
         return myChar;
     }
-
 }

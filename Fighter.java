@@ -9,6 +9,5 @@ public class Fighter {
         return myChar;
     }    
     
-    // HitPoints
     // Basic Equipment
 }

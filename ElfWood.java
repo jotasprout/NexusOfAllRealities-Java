@@ -11,5 +11,4 @@ public class ElfWood extends Elf {
     }
 
     // Proficiencies
-
 }
