@@ -31,16 +31,16 @@ public class Main
 
         myChar = Abilities.rollForAbilities(myChar);
 
-        myChar = Race.chooseRace(myChar);
+        myChar = Race.chooseRace(myChar, scan);
 
-        myChar = Career.chooseCareer(myChar);
+        myChar = Career.chooseCareer(myChar, scan);
 
         System.out.println(myChar);
 
         for (String i : myChar.myAbilityScores.keySet()) {
             System.out.println(i + ": " + myChar.myAbilityScores.get(i));
         }
-
+        // SCANNER CLOSE
         scan.close();
     }
 

@@ -8,7 +8,6 @@ public class Wizard {
         System.out.println("\nYou have " + myChar.goldPieces + " Gold Pieces.\n");
         return myChar;
     }    
-    
-    // HitPoints
+
     // Basic Equipment
 }

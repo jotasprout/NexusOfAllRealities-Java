@@ -9,7 +9,5 @@ public class Thief {
         return myChar;
     }    
     
-
-    // HitPoints
     // Basic Equipment
 }

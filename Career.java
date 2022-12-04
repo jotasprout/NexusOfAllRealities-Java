@@ -4,9 +4,9 @@ public class Career {
 
     static String career;
 
-    static Character chooseCareer(Character thisChar) {
+    static Character chooseCareer(Character thisChar, Scanner scan) {
 
-        Scanner scan = new Scanner(System.in);
+        // Scanner scan = new Scanner(System.in);
 
         System.out.println("\nWhat is your character's Career? [type a number]\n"
                 + "[1] Cleric\n"
@@ -15,8 +15,8 @@ public class Career {
                 + "[4] Wizard\n");
 
         String myCareerChoice = scan.nextLine();
-        //int nextInt = Integer.parseInt(nextIntString);
-        //int myCareerChoice = nextInt;
+        // int nextInt = Integer.parseInt(nextIntString);
+        // int myCareerChoice = nextInt;
 
         switch (myCareerChoice) {
             case "Cleric":
@@ -46,7 +46,7 @@ public class Career {
 
         // need a custom exception here if int < 1 and int > 4
 
-        scan.close();
+        // scan.close();
         return thisChar;
 
     }

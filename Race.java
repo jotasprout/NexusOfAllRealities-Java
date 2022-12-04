@@ -8,9 +8,9 @@ public class Race {
     static String subElf;
     static String subHalfling;
 
-    static Character chooseRace(Character aChar) {
+    static Character chooseRace(Character aChar, Scanner scan) {
 
-        Scanner scan = new Scanner(System.in);
+        //Scanner scan = new Scanner(System.in);
 
         System.out.println("\nWhat race is your character (type a number)?\n"
                 + "[1] Human\n"
@@ -26,25 +26,25 @@ public class Race {
                 aChar.race = "human";
                 // method to increase every ability score by one
                 Human.beHuman(aChar);
-                chooseSubRace(myRaceChoice, aChar);
+                chooseSubRace(myRaceChoice, aChar, scan);
                 break;
             case 2:
                 System.out.println("\nYou chose dwarf.\n");
                 aChar.race = "dwarf";
                 Dwarf.beDwarf(aChar);
-                chooseSubRace(myRaceChoice, aChar);
+                chooseSubRace(myRaceChoice, aChar, scan);
                 break;
             case 3:
                 System.out.println("\nYou chose elf.\n");
                 aChar.race = "elf";
                 Elf.beElf(aChar);
-                chooseSubRace(myRaceChoice, aChar);
+                chooseSubRace(myRaceChoice, aChar, scan);
                 break;
             case 4:
                 System.out.println("\nYou chose halfling.\n");
                 aChar.race = "halfling";
                 Halfling.beHalfling(aChar);
-                chooseSubRace(myRaceChoice, aChar);
+                chooseSubRace(myRaceChoice, aChar, scan);
                 break;
             default:
                 System.out.println("You chose snail. Excellent choice.\n");
@@ -58,7 +58,7 @@ public class Race {
 
     }
 
-    static String chooseSubRace(int myRaceChoice, Character myChar) {
+    static String chooseSubRace(int myRaceChoice, Character myChar, Scanner scan) {
 
         // Scanner scan = new Scanner(System.in);
         // int mySubRaceChoice = scan.nextInt();
@@ -69,15 +69,15 @@ public class Race {
                 subRace = "none";
                 break;
             case 2: // Dwarf
-                myChar.subRace = chooseSubDwarf(myChar);
+                myChar.subRace = chooseSubDwarf(myChar, scan);
                 // subRace = mySubDwarf;
                 // subRace = chooseSubDwarf();
                 break;
             case 3: // Elf
-                myChar.subRace = chooseSubElf(myChar);
+                myChar.subRace = chooseSubElf(myChar, scan);
                 break;
             case 4: // Halfling
-                myChar.subRace = chooseSubHalfling(myChar);
+                myChar.subRace = chooseSubHalfling(myChar, scan);
                 // subRace = subHalfling;
                 break;
             default:
@@ -89,11 +89,11 @@ public class Race {
         return subRace;
     }
 
-    static String chooseSubDwarf(Character myChar) {
+    static String chooseSubDwarf(Character myChar, Scanner scan) {
 
         // string mySubDwarf;
 
-        Scanner scan = new Scanner(System.in);
+        // Scanner scan = new Scanner(System.in);
 
         System.out.println("\nChoose a Dwarf sub-race.\n"
                 + "[1] Hill Dwarf\n"
@@ -122,15 +122,15 @@ public class Race {
         }
         // need a custom exception here if int < 1 and int > 3
 
-        scan.close();
+        // scan.close();
         return subRace;
     }
 
-    static String chooseSubElf(Character myChar) {
+    static String chooseSubElf(Character myChar, Scanner scan) {
 
         // String mySubElf;
 
-        Scanner scan = new Scanner(System.in);
+        // Scanner scan = new Scanner(System.in);
 
         System.out.println("\nChoose an Elf sub-race.\n"
                 + "[1] High Elf\n"
@@ -164,15 +164,15 @@ public class Race {
         }
         // need a custom exception here if int < 1 and int > 4
 
-        scan.close();
+        // scan.close();
         return subRace;
     }
 
-    static String chooseSubHalfling(Character myChar) {
+    static String chooseSubHalfling(Character myChar, Scanner scan) {
 
         // String mySubHalfling;
 
-        Scanner scan = new Scanner(System.in);
+        // Scanner scan = new Scanner(System.in);
 
         System.out.println("\nChoose a Halfling sub-race.\n"
                 + "[1] Lightfoot Halfling\n"
@@ -201,7 +201,7 @@ public class Race {
         }
         // need a custom exception here if int < 1 and int > 3
 
-        scan.close();
+        // scan.close();
         return subRace;
     }
 }

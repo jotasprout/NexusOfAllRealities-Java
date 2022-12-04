@@ -1,5 +1,5 @@
 public class Wealth {
-    // starting wealth by class (aka profession)
+    // starting wealth by career
     static int rollForStartingWealth(int numWealthRolls) {
         int wealthScore = 0;
         for (int rolls = 0; rolls <= numWealthRolls; rolls++) {
@@ -11,6 +11,5 @@ public class Wealth {
     }
 
     // exchange rates
-
     // track wealth of character
 }
