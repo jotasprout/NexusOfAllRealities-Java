@@ -11,6 +11,7 @@ public class DwarfHill extends Dwarf {
         int oldWis = myChar.wisdom;
         int newWis = oldWis + 1;
         myChar.wisdom = newWis;
+        myChar.myAbilityScores.put("wisdom", newWis);
         System.out.println(
                 "\nYour Wisdom roll was " + oldWis + ". Your wisdom as a Hill Dwarf is now " + newWis + ".\n");
         return myChar;

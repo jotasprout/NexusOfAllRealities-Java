@@ -150,6 +150,12 @@ public class Character {
     @Override
     public String toString() {
         return "Name: " + name 
+        + "\n, Strength: " + strength 
+        + "\n, Dexterity: " + dexterity 
+        + "\n, Constitution: " + constitution 
+        + "\n, Intelligence: " + intelligence 
+        + "\n, Wisdom: " + wisdom 
+        + "\n, Charisma: " + charisma
         + "\n, Level: " + level 
         + "\n, Career: " + career 
         + "\n, Race: " + race 
