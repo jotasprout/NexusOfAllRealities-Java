@@ -21,6 +21,7 @@ public class Dice {
         Random objGenerator = new Random();
         int randomSixSidedNum = objGenerator.nextInt(6);
         sixSidedRoll = randomSixSidedNum;
+        System.out.println("Roll: " + sixSidedRoll + "\n");
         return sixSidedRoll;
     }
 
