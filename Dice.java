@@ -1,15 +1,20 @@
-import java.util.Random;
+//import java.util.Random;
 
 public class Dice {
 
     // 4, 6, 8, 10, 12, 20
+    public int min;
+    public int max;
+
+    static int rollRandomNumber(int min, int max){
+        return (int)((Math.random()*(max - min)) + min);
+    }
 
     static int fourSidedRoll;
 
     // roll one four-sided die
     static int rollFourSided() {
-        Random objGenerator = new Random();
-        int randomFourSidedNum = objGenerator.nextInt(4);
+        int randomFourSidedNum = rollRandomNumber(1,4);
         fourSidedRoll = randomFourSidedNum;
         return fourSidedRoll;
     }
@@ -18,8 +23,7 @@ public class Dice {
 
     // roll one six-sided die
     static int rollSixSided() {
-        Random objGenerator = new Random();
-        int randomSixSidedNum = objGenerator.nextInt(6);
+        int randomSixSidedNum = rollRandomNumber(1,6);
         sixSidedRoll = randomSixSidedNum;
         System.out.println("Roll: " + sixSidedRoll + "\n");
         return sixSidedRoll;
@@ -29,8 +33,7 @@ public class Dice {
 
     // roll one eight-sided die
     static int rollEightSided() {
-        Random objGenerator = new Random();
-        int randomEightSidedNum = objGenerator.nextInt(8);
+        int randomEightSidedNum = rollRandomNumber(1,8);
         eightSidedRoll = randomEightSidedNum;
         return eightSidedRoll;
     }
@@ -39,8 +42,7 @@ public class Dice {
 
     // roll one ten-sided die
     static int rollTenSided() {
-        Random objGenerator = new Random();
-        int randomTenSidedNum = objGenerator.nextInt(10);
+        int randomTenSidedNum = rollRandomNumber(1,10);
         tenSidedRoll = randomTenSidedNum;
         return tenSidedRoll;
     }
@@ -49,8 +51,7 @@ public class Dice {
 
     // roll one twelve-sided die
     static int rollTwelveSided() {
-        Random objGenerator = new Random();
-        int randomTwelveSidedNum = objGenerator.nextInt(12);
+        int randomTwelveSidedNum = rollRandomNumber(1,12);
         twelveSidedRoll = randomTwelveSidedNum;
         return twelveSidedRoll;
     }
@@ -59,8 +60,7 @@ public class Dice {
 
     // roll one twenty-sided die
     static int rollTwentySided() {
-        Random objGenerator = new Random();
-        int randomTwentySidedNum = objGenerator.nextInt(20);
+        int randomTwentySidedNum = rollRandomNumber(1,20);
         twentySidedRoll = randomTwentySidedNum;
         return twentySidedRoll;
     }
