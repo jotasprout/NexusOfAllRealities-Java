@@ -5,14 +5,14 @@ public class Menu
 {
     public static void main(String args[]) {
 
-            // What would you like to do?
-    // Create a character
-    // See a list of my characters
-    // See a character
-    // Fight a thing
+        // What would you like to do?
+        // Create a character
+        // See a list of my characters
+        // See a character
+        // Fight a thing
 
         System.out.println(
-                "We'll start creating your character by naming it -- you can always change the name later if you feel Dwarf parents would't really name their daughter Bernie.\n");
+            "We'll start creating your character by naming it -- you can always change the name later if you feel Dwarf parents would't really name their daughter Bernie.\n");
 
         // SCANNER CREATION
         Scanner scan = new Scanner(System.in);

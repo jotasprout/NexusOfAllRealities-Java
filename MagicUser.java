@@ -1,3 +1,5 @@
 public class MagicUser {
-    // what goes here?
+    // 1st Level Spells
+    // 2nd Level Spells
+    // 3rd Level Spells
 }

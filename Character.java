@@ -51,7 +51,7 @@ public class Character {
     }
 
     // ALIGNMENT
-    String alignment;
+    Alignment alignment;
 
     // EXPERIENCE
     int expPoints;
