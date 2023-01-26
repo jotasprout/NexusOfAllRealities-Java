@@ -2,6 +2,11 @@
 
 After struggling through two other ideas, I chose to use a repo that had been nothing more than a README file for approximately six years. The **Nexus of All Realities** is a game and player management system for tabletop role-playing games. This version is just a character creation app based on the D&D character sheet (and hopefully some cool stuff from the basic set manual) that rolls the dice to create character states and behaviors.
 
+## To Do
+
+- Save or export as JSON
+- Create PDF character sheet
+
 ## Inspiration
 
 Are you old like me and tried to teach your children Dungeons & Dragons? Felt even more stupid than when you try to help with their homework, right?
