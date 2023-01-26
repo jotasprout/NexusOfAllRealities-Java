@@ -6,17 +6,19 @@ public class Alignment
     {
 
         String myMorality;
-        String myThing
+        String myThing;
 
-        System.out.println("Choose your character's morality.\n");
+        // below code that interacts with user should be moved to another file
 
-        myMorality = scan.nextLine();
+        // System.out.println("Choose your character's morality.\n");
 
-        System.out.println("\nChoose your character's morality.\n");
+        // myMorality = scan.nextLine();
 
-        myThing = scan.nextLine();
+        // System.out.println("\nChoose your character's morality.\n");
 
-        myChar = Abilities.rollForAbilities(myChar);
+        // myThing = scan.nextLine();
+
+        // myChar = Abilities.rollForAbilities(myChar);
 
     }
 }
