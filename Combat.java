@@ -1,5 +1,7 @@
 public class Combat {
 
+    // Should this be an Interface? Abstract?
+
     static int rollForHitPoints (int hitDice, int level){
         int hitPoints = 0;
         for (int rolls = 0; rolls <= level; rolls++){

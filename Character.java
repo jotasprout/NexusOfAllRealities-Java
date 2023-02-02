@@ -2,6 +2,8 @@ import java.lang.Override;
 import java.util.HashMap;
 import java.util.ArrayList;
 
+// should this be abstract?
+
 public class Character {
 
     String name;
